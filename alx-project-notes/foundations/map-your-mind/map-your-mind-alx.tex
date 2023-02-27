@@ -1,0 +1,137 @@
+% Created 2023-02-07 Tue 13:23
+% Intended LaTeX compiler: pdflatex
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\graphicspath{ {~/Documents/graphics/} }
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Anrich Tait}
+\date{\today}
+\title{Map your mind alx project notes}
+
+%START OF DOCUMENT 
+\begin{document}
+\clearpage
+
+%TITLE PAGE 
+\begin{titlepage}
+\begin{center}
+{\Large MAP YOUR MIND \par}
+\vspace{2cm}
+{\Large ALX PROJECT NOTES \par}
+\vspace{2cm}
+WRITTEN BY \par
+\vspace{2cm}
+{\Large Anrich Tait \par}
+\vspace{2cm}
+Project deadline: Feb 28, 2023
+\end{center}
+\vfill
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+\section{INTRODUCTION}
+These notes are for the "Map your mind" project. Below you can see the links that were provided as resources. There are also some extra text based links.
+
+\subsection{Useful links:}
+\begin{itemize}
+    \item \url{youtube.com/watch?v=rWMuEIcdJP4&ab_channel=Codecademy}
+\item \url{intranet.alxswe.com/rltoken/VtAuIhExkulIcXWO1HEjNA}
+\item \url{intranet.alxswe.com/rltoken/1DoPMSlrd_aa8It96jIsPw}
+\item \url{intranet.alxswe.com/rltoken/aEYnUFEQA3Y5C6BC_WML9g}
+\item \url{intranet.alxswe.com/rltoken/WLZr_hHlAp6Wn7JlbYX6Wg}
+\item \url{intranet.alxswe.com/rltoken/uK32rdcsizZw0oylNGsF6A}
+\item \url{intranet.alxswe.com/rltoken/R3xUI09WVpadElDwnMcK7A}
+\item \url{intranet.alxswe.com/rltoken/wOPej-BI-uv390BxWaLTLA}
+\item \url{techtarget.com/whatis/definition/algorithm}
+
+\end{itemize}
+\newpage
+
+\section{HOW TO THINK LIKE A PROGRAMMER}
+\begin{itemize}
+    \item Build a strong foundation: Having a strong fooundation will be much more useful for solving problems than memorizing the entire "dictionary". Therefore simpler code is better. Part of building a good foundation is figuring something out without looking for online solutions (e.g stack overflow). Rather use official documentation to understand application rather than  solution. 
+\item Collaborate: Sometimes speaking about problems can give you a new perspective, another way to do this is to take a break and come back with a fresh perspective. 
+\item Debugging tests your knowledge: Don't blame the machine! Test cases also create a clear idea of what the problems are.
+\end{itemize}
+
+%\subsection{Subsection2}
+%Example text 4.
+\newpage
+
+\section{PSEUDOCODE}
+Pseudocode is is a plain language description of the steps involved in an algorithm or another system. Pseudocode normally follows a similar structure to the code it is simplifying. It typically omits details that the machine would normally require (variables, functions etc.) therefore it cannot be used for actual programs. 
+
+This is especially useful when attempting to explain an algorithm or code for application in multiple languages. For example i you wrote an algorithm in C++ and then wanted to share the code so it can be applied to a python program. If the receiver doesn't know any C++ then it would be very difficult for them to code that algorithm in Python.
+
+\subsection{Why use Pseudocode?}
+\begin{itemize}
+    \item Pseudocode can help you notarize an idea for an algorithm or program without having to think about the specific applications to a set language (Not worrying about syntax or which kind of if statement will be needed). This can be hugely beneficial when planning a project. 
+\item Writing Pseudocode before a project can help remind you of the essential ideas you had and maybe if a problem arises you can reference the Pseudocode to see if something is missing.
+\end{itemize}
+Pseudocode is is a plain language description of the steps involved in an algorithm or another system. Pseudocode normally follows a similar structure to the code it is simplifying. It typically omits details that the machine would normally require (variables, functions etc.) therefore it cannot be used for actual programs. 
+
+This is especially useful when attempting to explain an algorithm or code for application in multiple languages. For example i you wrote an algorithm in C++ and then wanted to share the code so it can be applied to a python program. If the receiver doesn't know any C++ then it would be very difficult for them to code that algorithm in Python.
+
+\subsection{How to write Pseudocode?}
+Like previously mentioned Pseudocode does not require language specific syntax, but depending on you reasons for writing it can be useful to include some syntaxical things. There are no rules for writing Pseudocode but here are a couple pointers that may help:
+\begin{itemize}
+\item Capitalize key commands(IF number is > 10 THEN...): This makes it easier to create code blocks and spot logic
+\item Write one statement per line
+\item Use indentation: This will help keep the code readable and and provide a clear framework to follow when you apply the code to a real project.
+\item Be specific: Make it easy for yourself or others to understand what is actually being stated. Basically the same concept used when naming variables.
+\item Keep it simple: Don't include overly technical terms, especially if the application is aimed at sharing the code. 
+\end{itemize}
+
+\subsection{Examples:}
+\includegraphics[scale=0.5]{ps-code-1.png}
+
+
+\clearpage
+
+\section{ALGORITHMS}
+An algorithm is a procedure used to solve a problem or perform a computation. Algorithms act as an exact list of instructions that execute specific instructions step by step in either hardware or software based routines. \par
+\vspace{0.5cm}
+In mathematics and computer science an algorithm usually refers to a small procedure that solves a common problem. Algorithms are also used as specificications for performing data processing and play a major role in automated systems. \par 
+\vspace{0.5cm}
+Algorithms are also used for more complicated tasks (most people have heard of the social media Algorithms that recommend people to follow and all that).
+
+\subsection{How do Algorithms work?}
+Algorithms can be expressed in programming languages (for real application), Pseudocode, flowcharts and control tables. \par 
+\vspace{0.5cm}
+Algorithms use an initial input with a set of instructions. The input is the initial data needed to make decisions and can be represented in the form of numbers or words. The input data gets put through a set of instructions, or computations which can include arithmetic and decision making processes. The output is the last step in an algorithm and is normally expressed as more data. \par 
+\vspace{0.5cm} 
+Example:
+\vspace{0.5cm}
+A search algorithm that takes a search query as input and runs it through a set of instructions for searching through a database for relevant items to the query.
+
+\subsection{Types of Algorithms:}
+\begin{itemize}
+    \item Search engine algorithm: This algorithm takes search stringsof keywords and operators as input, searches its associated database for relevant webpages and returns results.
+    \item Encryption algorithm: Transforms data according to specified actions in order to protect it. A syymetric key algorithm, such as the Data Encryption Standard for example uses the same key to ecrypt and decrypt data.
+    \item Greedy algorithm: Solves optimization problems by finding the locally optimal solution, hoping it is the optimal solution at the global level. However it does not guarantree the most optimal solution.
+    \item Recursive algorithm: This algorithm calls itself repeatedly until it solves a problem. Recursive algorithms call themselves with a smaller value every time a recursive function is invoked.
+    \item Backtracking algorithm: This algorithm finds a solution to a given problem in incremental approaches and solves it one piece at a time.
+    \item Divide-and-conquer algorithm: This common algorithm is divided into two parts. One part divides a problem into smaller subproblems. The second part solves these problems and then combines them together to produce a solution.
+    \item Dynamic programming algorithm: This algorithm solves problems by dividing them into subproblems. The results are then stored to be applied for future corresponding problems.
+    \item Brute force algorithm: This algorithm iterates all possible solutions to a problem blindly, searching for one or more solutions to a function.
+    \item Sorting algorithm: Sorting algorithms are used to rearrange data structure based on a comparison operator, which is used to decide a new order for data.
+    \item Hashing algorithm: This algorithm takes data and converts it into a uniform message with a hashing.
+    \item Randomized algorithm: This algorithm reduces running times and time-based complexities. It uses random elements as part of its logic.
+\end{itemize}
+
+\vspace{0.5cm}
+\includegraphics[scale=0.5]{algorithmchart.png}
+
+
+\end{document}

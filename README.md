@@ -6,5 +6,8 @@ Each folder contains the files for a specific topic. See the list below for more
 3. tex-template.tex: The template I use for all my tex files.
 4. c++compendium: Notes on the C++ programming language. (WIP)
 5. python-compendium: Notes on the Python programming language. (WIP)
-6. git&github-compendium: Notes on useing Git and GitHub to manage projects.
+6. git&github-compendium: Notes on using Git and GitHub to manage projects.
+7. alx-project-notes: Notes on my journey through the ALX software engineering course.
+    -foundations: Notes on the foundation phase.
+
 Disclaimer: I recently moved from using emacs org-mode for my latex documents to Vimtex so not all the notes have tex documents as yet. If you would like the unformatted tex files just let me know through a pm or email (work.anrichjtait@gmail.com)
