@@ -1,0 +1,105 @@
+% Created 2023-03-01 Wed 09:27
+% Intended LaTeX compiler: pdflatex
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Anrich Tait}
+\date{\today}
+\usepackage{listings}
+\usepackage{color}
+\begin{document}
+\lstset{frame=tb,
+  language=C, 
+  aboveskip=5mm,
+  belowskip=5mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{blue},
+  keywordstyle=\color{magenta},
+  commentstyle=\color{green},
+  stringstyle=\color{cyan},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3}
+
+
+
+%\documentclass[a4paper, 11pt]{book} % A4 paper size and default 11pt font size
+
+\newcommand*{\plogo}{\fbox{$\mathcal{PL}$}} % Generic dummy publisher logo
+
+%\usepackage[utf8]{inputenc} % Required for inputting international characters
+%\usepackage[T1]{fontenc} % Output font encoding for international characters
+%\usepackage{stix} % Use the STIX fonts
+
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage} % Suppresses displaying the page number on the title page and the subsequent page counts as page 1
+	
+	\raggedleft % Right align the title page
+	
+	\rule{1pt}{\textheight} % Vertical line
+	\hspace{0.05\textwidth} % Whitespace between the vertical line and title page text
+	\parbox[b]{0.75\textwidth}{ % Paragraph box for holding the title page text, adjust the width to move the title page left or right on the page
+		
+		{\Huge\bfseries C Programming \\[0.5\baselineskip] Language}\\[2\baselineskip] % Title
+		{\large\textit{Compendium }}\\[4\baselineskip] % Subtitle or further description
+		{\Large\textsc{anrich tait}} % Author name, lower case for consistent small caps
+		
+		\vspace{0.5\textheight} % Whitespace between the title block and the publisher
+		
+		{\noindent Written 2023}\\[\baselineskip] % Publisher and logo
+	}
+
+
+      \end{titlepage}
+      \tableofcontents
+      \clearpage
+%----------------------------------------------------------------------------------------
+
+\section{Introduction}
+The following information is basically everything you need to get started with C
+programming. (The basics)
+
+
+\subsection{Example code block:}
+
+\begin{lstlisting}
+  #include <stdio.h>
+  
+  int main() {
+    printf("This is an example!");
+    return 0;
+  }
+
+  Output:
+  This is an example!
+\end{lstlisting}
+
+\section{The Basics:}
+\subsection{Output(Print text):}
+To output
+
+
+
+
+
+
+
+
+\end{document}

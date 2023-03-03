@@ -11,3 +11,11 @@ Each folder contains the files for a specific topic. See the list below for more
     -foundations: Notes on the foundation phase.
 
 Disclaimer: I recently moved from using emacs org-mode for my latex documents to Vimtex so not all the notes have tex documents as yet. If you would like the unformatted tex files just let me know through a pm or email (work.anrichjtait@gmail.com)
+
+
+About the creator:
+I am 22 and studying software engineering with future plans to pursue a computer science degree. Right now I am working a full time job to prepare finacially for this.
+I never expect anything for the use of my resources or time but if you feel so inclined please help me out with a donation:
+
+https://www.paypal.com/donate/?hosted_button_id=8RBL547KE3CLE
+
