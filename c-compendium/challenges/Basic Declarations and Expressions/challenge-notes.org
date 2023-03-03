@@ -1,0 +1,20 @@
+#+TITLE: Challenge notes
+#+AUTHOR: Anrich Tait
+
+* Challenge 2:
+Write a C program to get the C version you are using.
+
+** argc and argv:
+In C, argc and argv are used to pass command-line arguments to a C program.
+
+argc stands for "argument count" and is an integer that specifies the number of
+arguments passed to the program when it is run. It is automatically set by the C
+runtime system and is typically at least 1, since the first argument is the name
+of the program itself.
+
+
+argv stands for "argument vector" and is an array of strings that contains the
+actual arguments passed to the program. The first element of argv (i.e.,
+argv[0]) is always the name of the program itself, while the remaining elements
+contain the command-line arguments.
+
