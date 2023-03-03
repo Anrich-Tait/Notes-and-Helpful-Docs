@@ -10,7 +10,7 @@ Each folder contains the files for a specific topic. See the list below for more
 7. alx-project-notes: Notes on my journey through the ALX software engineering course.
     -foundations: Notes on the foundation phase.
 
-Disclaimer: I recently moved from using emacs org-mode for my latex documents to Vimtex so not all the notes have tex documents as yet. If you would like the unformatted tex files just let me know through a pm or email (work.anrichjtait@gmail.com)
+Disclaimer:If you want to view one of the documents use the PDF file, the org-mode files do not display output from the code blocks so is not as useful. If you want more information about my workflow or what resources I specifically used for each notebook please email me at: (work.anrichjtait@gmail.com)
 
 
 About the creator:
