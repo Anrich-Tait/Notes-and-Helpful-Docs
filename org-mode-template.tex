@@ -1,10 +1,30 @@
-#+Title: ORG MODE TEMPLATE
-#+Author: Anrich Tait
-#+latex: \clearpage
-#+OPTIONS: title:nil  toc:nil
-#+LaTeX_CLASS_OPTIONS: [a4paper]
+% Created 2023-03-04 Sat 05:43
+% Intended LaTeX compiler: pdflatex
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Anrich Tait}
+\date{\today}
+\title{ORG MODE TEMPLATE}
+\hypersetup{
+ pdfauthor={Anrich Tait},
+ pdftitle={ORG MODE TEMPLATE},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.5.5)}, 
+ pdflang={English}}
+\begin{document}
 
-#+BEGIN_EXPORT latex
+\clearpage
 %\usepackage{graphicx}
 %\usepackage{setspace}
 %\usepackage{titlesec}
@@ -52,17 +72,19 @@
 
 
 \tableofcontents
-#+END_EXPORT
 
-* Introduction
+\section{Introduction}
+\label{sec:orgb9c6e65}
 And now just type away!
-# Everything with a "# " (don't forget the space) before it is a comment and is ignored when exporting to pdf.
 
-** This is a sub-heading!
+\subsection{This is a sub-heading!}
+\label{sec:org9434b44}
 Remember our lists?
-- Here is a list entry
-- Here is another one
+\begin{itemize}
+\item Here is a list entry
+\item Here is another one
+\end{itemize}
 
-# Don't forget to add the bibliography by the end.
 bibliographystyle:apacite
 bibliography:/path/to/library.bib
+\end{document}

@@ -613,7 +613,193 @@ variables such as:
   int lower, upper, step;
   #+END_SRC
 -----
-  
+
+Computation in the temperature conversion program begins with the assignment
+statements:
+-----
+#+BEGIN_SRC C :results output
+  lower = 0;
+  upper = 300;
+  step = 20;
+  fahr = lower;
+  #+END_SRC
+-----
+
+This sets the variables to their initial values. Individual statements are
+terminated by semicolons.
+Each line of the table is computed the same way, so we use a loop that repeats
+once per output line; this is the purpose of the while loop:
+-----
+#+BEGIN_SRC C :results output
+  while (fahr <= upper) {
+    ...
+      }
+  #+END_SRC
+-----
+The while loop operates as follows: The condition in parentheses is tested. If
+it is true (fahr is than or equal to upper0, the body of the loop (the three
+statements enclosed in braces) is executed. Then the condition is re-tested and
+if true the body is executed again. When the test becomes false (fahr exceeds
+upper) the loop ends, and excecution continues at the statement that follows the
+loop. There are no further statments in this program, so it terminates.
+
+The body of a while can be one or more statements enclosed in braces, as in the
+temperature converter, or a single statemnt without braces, as in:
+-----
+#+BEGIN_SRC C :results output
+  while (i < j)
+    i = 2 * j
+  #+END_SRC
+-----
+
+In either case, we will always indent the statments controlled by the while by
+one tab stop so you can see at a glance which statements are inside the
+loop. The indentation emphasizes the logical structure of the program. ALthough
+C compilers do not care about how a program looks, proper indentation and
+spacing are essential to building clear and read-able code.
+
+Most of the work get's done in the body of the loop. The celsius temperature is
+computed and assigned to the variable celsius by the statement:
+-----
+#+BEGIN_SRC C :results output
+  celsius = 5 * (fahr-32) / 9;
+  #+END_SRC
+-----
+
+The reason for multiplying by 5 and then dividing by 9 instead of just
+multiplying by 5/9 is that in C integer division truncates: and fractional part
+is discareded. Since 5 and 9 are integers, 5/9 would be truncated to zero and so
+all the Celsius temperatures would be reported as zero.
+
+The above example is also a good represenation of the basic functionality of
+'printf'. 'printf' is a general purpose output formatting function. It's first
+argument is a string of characters to be printed, with each '%' indicating where
+one of the other (second, third, ...) arguments is to be substituted, and in
+what form it is to be printed. For instance, %d specifies an integer argument so
+the statement:
+-----
+#+BEGIN_SRC C :results output
+  printf("%d\t%d", fahr, celsius);
+  #+END_SRC
+-----
+causes the values of the two integers fahr and celsius to be printed, with a tab
+(\t) between them.
+Each % construction in the first argument of 'printf' is paired with the
+corresponding second argument, third argument, etc. They must match up properly
+by number and type, or you get wrong answers.
+
+There are a couple of probelms with the temperature conversion program. The
+simple one is that the output isn't very pretty because the numbers are not
+right-justified. This can be fixed by augmenting each '%d' in the printf
+statement with a width, the numbers printed will be right-justified in their
+fields.
+For instance:
+-----
+#+BEGIN_SRC C :results output
+  printf("%3d, %6d\n", fahr, celsius);
+  #+END_SRC
+-----
+This will print the first number of each line in a field three digits wide, and
+the second in a field six digits wide.
+
+The more serious issue is that integer arithmetic was used, this means that the
+celsius temperatures are not very accurate, for example: 0°F is actually about
+-17.8°C not -17. To get more accurate answers 'floating-point arithmetic' should
+be used.
+With those improvements in mind here is the second version of the program:
+-----
+#+BEGIN_SRC C :results output
+  #include <stdio.h>
+
+  int main(){
+    float fahr, celsius;
+    int lower, upper, step;
+
+    lower = 0; // lower limit of temp table
+    upper = 300;// upper limit
+    step = 20; // step size
+
+    fahr = lower;
+    while (fahr <= upper) {
+      celsius = (5.0/9.0) * (fahr-32.0);
+      printf("%3.0f %6.1f\n", fahr, celsius);
+      fahr = fahr + step;
+      }
+  }
+  #+END_SRC
+Output:
+  #+RESULTS:
+  #+begin_example
+    0  -17.8
+   20   -6.7
+   40    4.4
+   60   15.6
+   80   26.7
+  100   37.8
+  120   48.9
+  140   60.0
+  160   71.1
+  180   82.2
+  200   93.3
+  220  104.4
+  240  115.6
+  260  126.7
+  280  137.8
+  300  148.9
+  #+end_example
+-----
+
+The changes are:
+- fahr and celsius are now declared to be float
+- the formula for conversion is written in a more natural way
+- 5/9 would truncate to zero (a decimal point in a constant indicates that it is
+  floating point) so 5.0/9.0 was used and will not truncate because it is the
+  ratio of two floating-point values.
+
+If an arithmetic  operator has integer operands, an integer operation is
+performed. If an arithmetic operator has one floating-point operand and one
+integer operand, however, the integer will be converted to floating point before
+the operation is done. If fahr-32 was written it would be converted to a
+floating-point number, but writing floating-point contstants with explicit
+decimal points even when they have integral values emphasizes their
+floating-point nature for human readers.
+
+Notice that the assignment:
+-----
+#+BEGIN_SRC C :results output
+  fahr = lower;
+#+END_SRC
+-----
+and the test
+-----
+#+BEGIN_SRC C :results output
+  while (fahr <= upper)
+#+END_SRC
+-----
+also work in the natural way-the int is converted to float before the operation
+is done.
+The printf conversion specification %3.0f says that a floating-point number
+(here fahr) is to be printed at least three characters wide, with no decimal
+point and no fraction digits. %6.1f describes another number (celsius) that is
+to be printed at least six characters wide, with 1 digit after the decimal
+point.
+Witdth and precision may be omitted from a specification: %6f says that the
+number is to be atleast six characters wide, %.2f specifies two characters after
+the decimal point, but the width is no constrained; and %f merely says to print
+the number as floating point.
+-----
+#+BEGIN_SRC C :results output
+  %d   //print as decimal integer
+  %6d  // print as decimal integer, at least 6 chars wide
+  %f   //print as floating point
+  %f6f // print as floating point, at least 6 chars wide
+  %.2f //print as floating point, 2 chars after decimal point
+  %6.2f//print as floating point, at least 6 wide and 2 after decimal point
+#+END_SRC
+-----
+
+
+
 *** %d (Decimal Integer):
 
 -----
@@ -1562,7 +1748,6 @@ complex conditions and the shorthand 'if-else' statement for simpler conditions.
 
 
 
-
 * Switch statement:
 Instead of writing many 'if ... else' statements, you can use the switch
 statement.
@@ -1881,7 +2066,6 @@ execution time of a program, especially if the inner loop is executed many
 times. Therefore, it's important to carefully consider whether a nested loop is
 the best solution for a particular problem, or if there is a more efficient way
 to achieve the same result.
-
 
 
 

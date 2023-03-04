@@ -1,4 +1,4 @@
-% Created 2023-03-03 Fri 16:37
+% Created 2023-03-04 Sat 05:56
 % Intended LaTeX compiler: pdflatex
 \documentclass[a4paper]{article}
 \usepackage[utf8]{inputenc}
@@ -63,11 +63,11 @@
 \newpage
 
 \section{{\bfseries\sffamily TODO} Introduction}
-\label{sec:orgc1005f9}
+\label{sec:org8412e9e}
 
 
 \subsection{Example Template:}
-\label{sec:org96cddba}
+\label{sec:org8b532b1}
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
 #include <stdio.h>
@@ -84,7 +84,7 @@ This is a template!
 \noindent\rule{\textwidth}{0.5pt}
 \clearpage
 \section{Output (printf):}
-\label{sec:orgb820186}
+\label{sec:org3e1b507}
 To output values or print text in c, you can use the \textbf{printf()} function.
 
 \noindent\rule{\textwidth}{0.5pt}
@@ -124,7 +124,7 @@ hello, worldI am learning C!
 \noindent\rule{\textwidth}{0.5pt}
 \clearpage
 \section{Basic escape sequences:}
-\label{sec:org8215ac7}
+\label{sec:org67dcd51}
 Escape sequences are used to do various things, like adding new lines and adding
 characters that the compiler would normally conflict with. See below:
 \begin{center}
@@ -140,7 +140,7 @@ $\backslash$" & Inserts a double quote character\\
 \end{center}
 
 \subsection{Insert a new line:}
-\label{sec:org91639ea}
+\label{sec:orgb199e8d}
 To insert a new line we need to use the \textbf{\n} character. 
 
 \noindent\rule{\textwidth}{0.5pt}
@@ -168,13 +168,13 @@ YES/NO
 \noindent\rule{\textwidth}{0.5pt}
 \clearpage
 \section{Comments:}
-\label{sec:orge53e7c2}
+\label{sec:org3ee6143}
 Comments are used to explain code and make it more readable. It is also a good
 way to make sure the compiler doesn't execute a block of code when you are
 testing changes.
 Comments can be single-lined or multi-lined.
 \subsection{Single-lined comments:}
-\label{sec:org9e753df}
+\label{sec:org85a75aa}
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
 #include <stdio.h>
@@ -192,7 +192,7 @@ This is an example of a single line comment.
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{Multi-lined comments:}
-\label{sec:orgf2ff43b}
+\label{sec:org114874e}
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
 #include <stdio.h>
@@ -213,7 +213,7 @@ This is an example of a multi-lined comment.
 \noindent\rule{\textwidth}{0.5pt}
 \clearpage
 \section{Data types:}
-\label{sec:org43e2b79}
+\label{sec:org723f35d}
 Data types in c refer to an extensive system used for declaring variables or
 functions of different types.
 The type of a variable determines how much space it occupies in storage and how
@@ -250,7 +250,7 @@ types. The type of a function specifies the type of the functions return
 value. See the basic types in the following sections.
 
 \subsection{Basic Data types (quick reference):}
-\label{sec:org370f299}
+\label{sec:org0b4f867}
 In the following sub-sections detailed descriptions and uses for each data type
 are given. The table below is a quick reference for all the basic types and
 their format specifiers:
@@ -277,7 +277,7 @@ string & Stores two ore more characters & \%s\\
 \end{tabular}
 \end{center}
 \subsection{Set decimal precision:}
-\label{sec:org0198801}
+\label{sec:org7b26d29}
 If you print a floating point number it will output many digits after the
 decimal point. If you want to remove the extra decimals (set decimal
 precision), you can use a dot (.) followed by a number that specifies how many
@@ -307,7 +307,7 @@ Output:
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{Type conversion:}
-\label{sec:org805b79a}
+\label{sec:org9e38e1b}
 Sometimes you have to convert the value of one data type to another. This is
 known as type conversion:
 For example if you divide two integers, 5 and 2. You would expect the result to
@@ -343,7 +343,7 @@ There are two types of conversion in C:
 \end{itemize}
 
 \subsubsection{Implicit Conversion:}
-\label{sec:orgf15f841}
+\label{sec:org1202756}
 Implicit conversion is done automatically by the compiler when you assign a
 value of one type to another.
 For example if you assign int to a float type:
@@ -420,7 +420,7 @@ integer values to floating-point values.
 For the we use Explicit Conversion.
 
 \subsubsection{Explicit Conversion:}
-\label{sec:org2d7c260}
+\label{sec:org5da4f13}
 Explicit conversion is done manually by placing the type in parentheses () in
 front of the value.
 
@@ -464,7 +464,7 @@ Output:
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{Integer Types:}
-\label{sec:org755505c}
+\label{sec:org7e4164c}
 The following table provides the details of standard integer tyoes with their
 storage size and value ranges:
 \begin{center}
@@ -497,7 +497,7 @@ unsigned long & 8 bytes & 0 to 18446744073709551615\\
 \end{center}
 
 \subsection{Floating-point numbers:}
-\label{sec:orgcf40d99}
+\label{sec:org3a3d98f}
 The following table provides the details of standard floating-point numbers with
 storage sizes and value ranges and their precision:
 \begin{center}
@@ -519,7 +519,7 @@ other details about the binary representation of real numbers in your programs.
 
 \clearpage
 \subsection{Void Types:}
-\label{sec:org702ac3e}
+\label{sec:org5b35e93}
 The void type specifies that no value is availabe. It is used in three
 situtations:
 \begin{center}
@@ -548,7 +548,7 @@ Pointers to void & A pointer of type void * represents the address of an\\
 \end{center}
 
 \subsection{Derived types:}
-\label{sec:orgbf04c17}
+\label{sec:org00e4a5f}
 The derived data types are basically derived out of the fundamental datatypes. A
 derived data type won’t typically create a new data type – but would add various
 new functionalities to the existing ones instead.
@@ -581,13 +581,13 @@ structures & A collection of various different types of data type items that get
 
 \clearpage
 \section{Variables:}
-\label{sec:org9e6597b}
+\label{sec:orgb35d09d}
 Variables are containers for storing data values, like numbers and
 characters. Like mentioned previously there are different \textbf{data types} in
 C. These data types are used to declare variable types.
 
 \subsection{Syntax:}
-\label{sec:org8d7ba01}
+\label{sec:org6004000}
 To create a variable specify the type and assign it a value.
 \begin{center}
 \begin{tabular}{llll}
@@ -619,7 +619,7 @@ int main(){
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{Output variables:}
-\label{sec:orgad47f9a}
+\label{sec:org7f5cb0c}
 To output variables in C you must use "format specifiers":
 These are used together with the \textbf{printf()} function to tell the compiler what
 data type the variable is.
@@ -727,8 +727,215 @@ int lower, upper, step;
 
 \noindent\rule{\textwidth}{0.5pt}
 
+Computation in the temperature conversion program begins with the assignment
+statements:
+
+\noindent\rule{\textwidth}{0.5pt}
+\begin{verbatim}
+lower = 0;
+upper = 300;
+step = 20;
+fahr = lower;
+\end{verbatim}
+
+\noindent\rule{\textwidth}{0.5pt}
+
+This sets the variables to their initial values. Individual statements are
+terminated by semicolons.
+Each line of the table is computed the same way, so we use a loop that repeats
+once per output line; this is the purpose of the while loop:
+
+\noindent\rule{\textwidth}{0.5pt}
+\begin{verbatim}
+while (fahr <= upper) {
+  ...
+    }
+\end{verbatim}
+
+\noindent\rule{\textwidth}{0.5pt}
+The while loop operates as follows: The condition in parentheses is tested. If
+it is true (fahr is than or equal to upper0, the body of the loop (the three
+statements enclosed in braces) is executed. Then the condition is re-tested and
+if true the body is executed again. When the test becomes false (fahr exceeds
+upper) the loop ends, and excecution continues at the statement that follows the
+loop. There are no further statments in this program, so it terminates.
+
+The body of a while can be one or more statements enclosed in braces, as in the
+temperature converter, or a single statemnt without braces, as in:
+
+\noindent\rule{\textwidth}{0.5pt}
+\begin{verbatim}
+while (i < j)
+  i = 2 * j
+\end{verbatim}
+
+\noindent\rule{\textwidth}{0.5pt}
+
+In either case, we will always indent the statments controlled by the while by
+one tab stop so you can see at a glance which statements are inside the
+loop. The indentation emphasizes the logical structure of the program. ALthough
+C compilers do not care about how a program looks, proper indentation and
+spacing are essential to building clear and read-able code.
+
+Most of the work get's done in the body of the loop. The celsius temperature is
+computed and assigned to the variable celsius by the statement:
+
+\noindent\rule{\textwidth}{0.5pt}
+\begin{verbatim}
+celsius = 5 * (fahr-32) / 9;
+\end{verbatim}
+
+\noindent\rule{\textwidth}{0.5pt}
+
+The reason for multiplying by 5 and then dividing by 9 instead of just
+multiplying by 5/9 is that in C integer division truncates: and fractional part
+is discareded. Since 5 and 9 are integers, 5/9 would be truncated to zero and so
+all the Celsius temperatures would be reported as zero.
+
+The above example is also a good represenation of the basic functionality of
+'printf'. 'printf' is a general purpose output formatting function. It's first
+argument is a string of characters to be printed, with each '\%' indicating where
+one of the other (second, third, \ldots{}) arguments is to be substituted, and in
+what form it is to be printed. For instance, \%d specifies an integer argument so
+the statement:
+
+\noindent\rule{\textwidth}{0.5pt}
+\begin{verbatim}
+printf("%d\t%d", fahr, celsius);
+\end{verbatim}
+
+\noindent\rule{\textwidth}{0.5pt}
+causes the values of the two integers fahr and celsius to be printed, with a tab
+(\t) between them.
+Each \% construction in the first argument of 'printf' is paired with the
+corresponding second argument, third argument, etc. They must match up properly
+by number and type, or you get wrong answers.
+
+There are a couple of probelms with the temperature conversion program. The
+simple one is that the output isn't very pretty because the numbers are not
+right-justified. This can be fixed by augmenting each '\%d' in the printf
+statement with a width, the numbers printed will be right-justified in their
+fields.
+For instance:
+
+\noindent\rule{\textwidth}{0.5pt}
+\begin{verbatim}
+printf("%3d, %6d\n", fahr, celsius);
+\end{verbatim}
+
+\noindent\rule{\textwidth}{0.5pt}
+This will print the first number of each line in a field three digits wide, and
+the second in a field six digits wide.
+
+The more serious issue is that integer arithmetic was used, this means that the
+celsius temperatures are not very accurate, for example: 0°F is actually about
+-17.8°C not -17. To get more accurate answers 'floating-point arithmetic' should
+be used.
+With those improvements in mind here is the second version of the program:
+
+\noindent\rule{\textwidth}{0.5pt}
+\begin{verbatim}
+#include <stdio.h>
+
+int main(){
+  float fahr, celsius;
+  int lower, upper, step;
+
+  lower = 0; // lower limit of temp table
+  upper = 300;// upper limit
+  step = 20; // step size
+
+  fahr = lower;
+  while (fahr <= upper) {
+    celsius = (5.0/9.0) * (fahr-32.0);
+    printf("%3.0f %6.1f\n", fahr, celsius);
+    fahr = fahr + step;
+    }
+}
+\end{verbatim}
+Output:
+\begin{verbatim}
+  0  -17.8
+ 20   -6.7
+ 40    4.4
+ 60   15.6
+ 80   26.7
+100   37.8
+120   48.9
+140   60.0
+160   71.1
+180   82.2
+200   93.3
+220  104.4
+240  115.6
+260  126.7
+280  137.8
+300  148.9
+\end{verbatim}
+
+\noindent\rule{\textwidth}{0.5pt}
+
+The changes are:
+\begin{itemize}
+\item fahr and celsius are now declared to be float
+\item the formula for conversion is written in a more natural way
+\item 5/9 would truncate to zero (a decimal point in a constant indicates that it is
+floating point) so 5.0/9.0 was used and will not truncate because it is the
+ratio of two floating-point values.
+\end{itemize}
+
+If an arithmetic  operator has integer operands, an integer operation is
+performed. If an arithmetic operator has one floating-point operand and one
+integer operand, however, the integer will be converted to floating point before
+the operation is done. If fahr-32 was written it would be converted to a
+floating-point number, but writing floating-point contstants with explicit
+decimal points even when they have integral values emphasizes their
+floating-point nature for human readers.
+
+Notice that the assignment:
+
+\noindent\rule{\textwidth}{0.5pt}
+\begin{verbatim}
+fahr = lower;
+\end{verbatim}
+
+\noindent\rule{\textwidth}{0.5pt}
+and the test
+
+\noindent\rule{\textwidth}{0.5pt}
+\begin{verbatim}
+while (fahr <= upper)
+\end{verbatim}
+
+\noindent\rule{\textwidth}{0.5pt}
+also work in the natural way-the int is converted to float before the operation
+is done.
+The printf conversion specification \%3.0f says that a floating-point number
+(here fahr) is to be printed at least three characters wide, with no decimal
+point and no fraction digits. \%6.1f describes another number (celsius) that is
+to be printed at least six characters wide, with 1 digit after the decimal
+point.
+Witdth and precision may be omitted from a specification: \%6f says that the
+number is to be atleast six characters wide, \%.2f specifies two characters after
+the decimal point, but the width is no constrained; and \%f merely says to print
+the number as floating point.
+
+\noindent\rule{\textwidth}{0.5pt}
+\begin{verbatim}
+%d   //print as decimal integer
+%6d  // print as decimal integer, at least 6 chars wide
+%f   //print as floating point
+%f6f // print as floating point, at least 6 chars wide
+%.2f //print as floating point, 2 chars after decimal point
+%6.2f//print as floating point, at least 6 wide and 2 after decimal point
+\end{verbatim}
+
+\noindent\rule{\textwidth}{0.5pt}
+
+
+
 \subsubsection{\%d (Decimal Integer):}
-\label{sec:orgfdd6d0f}
+\label{sec:org7cf0524}
 
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
@@ -744,7 +951,7 @@ int main(){
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsubsection{\%c (Character):}
-\label{sec:orga35ac53}
+\label{sec:orgb39ae22}
 
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
@@ -765,7 +972,7 @@ The first letter of the alphabet is: a
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsubsection{\%f (Floating Point):}
-\label{sec:org11a23aa}
+\label{sec:orgfa88f93}
 
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
@@ -785,7 +992,7 @@ The floating point of a is 3.000000
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsubsection{\%e (Floating Pointer Number):}
-\label{sec:orgd5a3614}
+\label{sec:org290538d}
 
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
@@ -805,7 +1012,7 @@ The floating-point of a is 1.250000e+01
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsubsection{\%s (String):}
-\label{sec:org304a32a}
+\label{sec:org149fbb8}
 
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
@@ -825,7 +1032,7 @@ The string value of s is String
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsubsection{\%lf (Double):}
-\label{sec:orgfc0ee52}
+\label{sec:org68b8826}
 
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
@@ -845,7 +1052,7 @@ The double value of d is 12.500000
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsubsection{\%o (octal integer):}
-\label{sec:org72685f7}
+\label{sec:org1660587}
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
 #include <stdio.h>
@@ -864,7 +1071,7 @@ The octal integer value of oct is 13
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsubsection{\%x (Hexadecimal Integer):}
-\label{sec:org0e3aa49}
+\label{sec:orgfb2c5d0}
 
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
@@ -884,7 +1091,7 @@ The hexadecimal value of h is e
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsubsection{\%p (Prints Memory Address):}
-\label{sec:orga063913}
+\label{sec:orgdbef5a7}
 To find the memory address that holds values of a variable, we use the \%p format
 specifier and it prints in hexadecimal form.
 
@@ -906,7 +1113,7 @@ The memory address of sum is 0x7ffdf9e40ce4
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{Changing variable values:}
-\label{sec:orgce0802c}
+\label{sec:org248809d}
 \textbf{Note:} if you assign values to an existing variable, it will overwrite the
  previous value.
 
@@ -956,7 +1163,7 @@ myNumTwo= 23
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{Add variables together:}
-\label{sec:org06aa56d}
+\label{sec:orgd1bb3b0}
 To add variables together use the \textbf{+} operator:
 
 \noindent\rule{\textwidth}{0.5pt}
@@ -979,7 +1186,7 @@ Output:
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{Declare multiple variables:}
-\label{sec:org880bc12}
+\label{sec:org8078091}
 To declare more than one variable of the same type use a comma-seperated list:
 
 \noindent\rule{\textwidth}{0.5pt}
@@ -1019,7 +1226,7 @@ Output:
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{Variable names:}
-\label{sec:orge137dae}
+\label{sec:org765e87b}
 All C variables must be identified with unique names.
 These unique names are called \textbf{identifiers}.
 Identifiers can be short names (like x and y) or more descriptive names (ages,
@@ -1037,7 +1244,7 @@ The general rules for naming variables are:
 \end{itemize}
 
 \subsection{Real life example:}
-\label{sec:orga981c7d}
+\label{sec:orgbb56a1c}
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
   #include <stdio.h>
@@ -1060,7 +1267,7 @@ printf("Student grade: %c", studentGrade);
 \noindent\rule{\textwidth}{0.5pt}
 \clearpage
 \section{Constants:}
-\label{sec:org860983d}
+\label{sec:org309eac0}
 To prevent a variable from being changed you can use the \textbf{const} keyword.
 This will declare the variable as "constant", which means unchangeable and
 read-only:
@@ -1101,7 +1308,7 @@ PI: 3.140000
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{Things to note:}
-\label{sec:org29d56b1}
+\label{sec:org5022578}
 When you declare a constant variable, it must be assigned with a value:
 \textbf{Like this:}
 
@@ -1144,7 +1351,7 @@ int main(){
 \noindent\rule{\textwidth}{0.5pt}
 \clearpage
 \section{Operators:}
-\label{sec:org9fdc3ba}
+\label{sec:org092ce87}
 Operators are used to perform operations on variables and values.
 In the example below, the \textbf{+} operator is used to add two values together.
 
@@ -1187,7 +1394,7 @@ Output:
 
 \noindent\rule{\textwidth}{0.5pt}
 \subsection{Operator groups:}
-\label{sec:orgebf82cc}
+\label{sec:orgddf41e5}
 C divides operators into the following groups:
 \begin{itemize}
 \item Arithmetic operators
@@ -1198,7 +1405,7 @@ C divides operators into the following groups:
 \end{itemize}
 
 \subsubsection{Arithmetic operators:}
-\label{sec:orge65ac81}
+\label{sec:orgc311d35}
 Arithmetic operators are used to  perfrom common mathematical operations.
 \begin{center}
 \begin{tabular}{l|l|l|l}
@@ -1223,7 +1430,7 @@ OPERATOR & NAME & DESCRIPTION & EXAMPLE\\
 \end{center}
 
 \subsubsection{Assignment operators:}
-\label{sec:orgeefb663}
+\label{sec:org70b3be3}
 Assignment operators are used to assign values to variables.
 
 \begin{center}
@@ -1255,7 +1462,7 @@ OPERATOR & EXAMPLE & SAME AS\\
 \end{center}
 
 \subsubsection{Comparison operators:}
-\label{sec:org5047bbe}
+\label{sec:orgecf30d1}
 Comparison operators are used to compare two values (or variables). This is
 important in programming, because it helps us to find answers and make
 decisions.
@@ -1284,7 +1491,7 @@ false(0). These values are known as \textbf{Boolean values}. The boolean concept
 better explained in the \textbf{booleans and if\ldots{}else} sections.
 
 \subsubsection{Logical operators:}
-\label{sec:org010a372}
+\label{sec:orgc50cb28}
 You can also test for true or false with logical operators.
 Logical operators are used to determine the logic between variables or values:
 \begin{center}
@@ -1303,7 +1510,7 @@ OPERATOR & NAME & DESCRIPTION & EXAMPLE\\
 \end{center}
 
 \subsubsection{Sizeof operator:}
-\label{sec:orgfe7cdcc}
+\label{sec:orgbf0182c}
 The memory size (in bytes) of a data type or a variable can be found with the
 \textbf{sizeof} operator:
 
@@ -1340,7 +1547,7 @@ Output:
 \clearpage
 \clearpage
 \section{Booleans:}
-\label{sec:org62f5a33}
+\label{sec:orgff403e7}
 Very often in  programming you will need a data type that can only have one of
 two values, like:
 \begin{itemize}
@@ -1352,7 +1559,7 @@ For this, C has a bool data type, which is known as booleans.
 Booleans represent data values that are either true or false.
 
 \subsection{Boolean variables:}
-\label{sec:org460fbb6}
+\label{sec:orgf41ef34}
 In C, the bool type is not a built-in data type, like int or char.
 It was introduced in C99 and must be imported with the following header file to
 be used:
@@ -1395,7 +1602,7 @@ Output:
 Therefore, you must use the \%d format specifier to print a boolean variable.
 
 \subsection{Comparing Values and Variables:}
-\label{sec:org7f84c7f}
+\label{sec:org2472042}
 Comparing values can be very  useful in programming, because it helps us find
 answers and make decisions.
 For example, you can use a comparison operator, such as greater than (>) to
@@ -1478,7 +1685,7 @@ Output:
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{Real life example:}
-\label{sec:org23d2743}
+\label{sec:orge760e06}
 This example checks if a person is old enough to vote.
 
 \noindent\rule{\textwidth}{0.5pt}
@@ -1507,14 +1714,14 @@ Old enough to vote!
 \clearpage
 \clearpage
 \section{if Statements:}
-\label{sec:org1a85036}
+\label{sec:org5fe8c44}
 In C there are several types of \textbf{'if'} statements that are used to control the
 flow of execution in a program. The main difference between the different types
 of 'if' statements is in their syntax and how they are used in different
 situations.
 Here are the different types of 'if' statements and their syntax:
 \subsection{Conditions and if statements:}
-\label{sec:orgaa7bb19}
+\label{sec:org319b388}
 In previous sections the use of logical conditions were mentioned:
 \begin{itemize}
 \item Less than: a < b
@@ -1539,13 +1746,13 @@ C has the following conditional statements:
 \end{itemize}
 
 \subsection{if Statement:}
-\label{sec:org4184ab0}
+\label{sec:orgc8fd57a}
 The "\textbf{if}" statement is used for making decisions based on certain
 conditions. It allows a program to execute different statements based on whether
 a specified condition is true or false.
 
 \subsubsection{Syntax and examples:}
-\label{sec:orgeb31229}
+\label{sec:org5941e57}
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
 if (condition) {
@@ -1582,14 +1789,14 @@ In this example, the \textbf{"if"} statement check if "\textbf{x}" is greater th
 the output.
 
 \subsection{if \ldots{} else Statement:}
-\label{sec:org0adbc30}
+\label{sec:org238e6b5}
 The \textbf{'if else'} statement is used for making decisions based on certain
 conditions. It allows a program to execute different statements based on whether
 a specified condition is true or false. The '\textbf{if else}' statement provides an
 alternative execution path if the condition is false.
 
 \subsubsection{Syntax and examples:}
-\label{sec:org63ea83c}
+\label{sec:org82bb9c1}
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
 if (condition) {
@@ -1683,14 +1890,14 @@ than or equal to 3, the message "x is less than or equal to 3" would be printed
 instead.
 
 \subsection{else \ldots{} if Statement:}
-\label{sec:org32ab0cd}
+\label{sec:org1057abc}
 In C the '\textbf{else if}' statement is used to test multiple conditions in
 sequence. It allows a program to executre different statments based on different
 conditions in a hierarchical manner. The '\textbf{else if}' statement is placed after
 an initial '\textbf{if}' statement and before the '\textbf{else}' statement.
 
 \subsubsection{Syntax and examples:}
-\label{sec:orgfb3145f}
+\label{sec:orgd093027}
 
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
@@ -1753,7 +1960,7 @@ the other, allowing the program to choose the apporopriate message to print
 based on the value of the 'score' variable.
 
 \subsection{Short hand if \ldots{} else:}
-\label{sec:org2b606ea}
+\label{sec:org9573402}
 There is also a shorthand if else, which is known as the ternary operator\footnote{Operand: a term used to refer to a value or a variable that is operated
 on by an operator.}
 because it consists of three operands\footnote{Operator is a symbol that performs some operation on one
@@ -1762,7 +1969,7 @@ is a compact way of writing an 'if-else' statement that consists of a single
 line of code for each condition. It is also known as a conditional operator.
 
 \subsubsection{Syntax:}
-\label{sec:orgb083b8c}
+\label{sec:orgaa8a8b9}
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
 (condition) ? expression1 : expression2;
@@ -1820,9 +2027,8 @@ complex conditions and the shorthand 'if-else' statement for simpler conditions.
 
 
 
-
 \section{Switch statement:}
-\label{sec:orgb8b0f83}
+\label{sec:orgf01176c}
 Instead of writing many 'if \ldots{} else' statements, you can use the switch
 statement.
 
@@ -1833,7 +2039,7 @@ cases to consider, and it provides a more concise and readable way to express
 complex conditional logic than a series of nested 'if' statements.
 
 \subsection{Syntax:}
-\label{sec:org8f7592f}
+\label{sec:org37587c6}
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
   switch (expression) {
@@ -1871,7 +2077,7 @@ is no case match.
 \end{itemize}
 
 \subsection{Example:}
-\label{sec:org2cbfb2c}
+\label{sec:orgee43406}
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
 #include <stdio.h>
@@ -1916,7 +2122,7 @@ optional and it is executed if none of the cases match. It is recommended to
 always include a 'default' block to handel unexpected cases.
 
 \subsubsection{'Break' keyword:}
-\label{sec:orgf9b70d8}
+\label{sec:org29ef0db}
 When C reaches a break keyword, it breaks out of the switch block.
 This will stop the execution of more code and case testing inside the block.
 When a match is found and the job is done, it's time for a break. There is no
@@ -1925,7 +2131,7 @@ need for more testing.
 Note: a break can save a lot of execution time because it "ignore" the execution
 of all the rest of the code in the switch block.
 \subsubsection{'Default' keyword:}
-\label{sec:org8705d05}
+\label{sec:org38b8e45}
 The 'default' keyword specifies some code to run if there is no case match:
 
 \noindent\rule{\textwidth}{0.5pt}
@@ -1959,7 +2165,7 @@ Note: The default keyword must be used as the last statement in the switch, and
 it does not need a break.
 
 \section{Loops:}
-\label{sec:orgab72111}
+\label{sec:org2e68329}
 Loops can execute a block of code as long as a specified condition is reached.
 Loops are handy because they save time, reduce errors, and they makde code more
 readable.
@@ -1967,7 +2173,7 @@ readable.
 There are 3 types of loops in C: 'for', 'while', and 'do-while'.
 
 \subsection{for Loop:}
-\label{sec:orge944910}
+\label{sec:orgedba6a0}
 The 'for' loops is a control flow statement that repeatedly executes a block of
 code as long as a particular condition is true. The syntax is as follows:
 
@@ -2020,7 +2226,7 @@ Output:
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{while Loop:}
-\label{sec:org987268a}
+\label{sec:org8f395ba}
 \noindent\rule{\textwidth}{0.5pt}
 \begin{verbatim}
 while (condition) {
@@ -2064,7 +2270,7 @@ Output:
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{do-while Loop:}
-\label{sec:orgd10d739}
+\label{sec:org8002b50}
 The do-while loop is a control flow statement that repeatedly executes a block
 of code as long as a particular condition is true. The syntax of the do-while
 loop is as follows:
@@ -2115,7 +2321,7 @@ that the loop condition will eventually become false, otherwise the loop will
 continue indefinitely, resulting in an infinite loop.
 
 \subsection{Nested Loops:}
-\label{sec:orge3da5f3}
+\label{sec:org6aeda73}
 Nested loops in C are loops that are placed inside another loop. This allows you
 to perform more complex operations that require multiple iterations.
 
@@ -2179,11 +2385,10 @@ to achieve the same result.
 
 
 
-
 \section{Break and Continue:}
-\label{sec:org093356b}
+\label{sec:org3d3f10d}
 \subsection{Break:}
-\label{sec:org9c21830}
+\label{sec:orgc1e3c40}
 The 'break' statement is a control statement that is used to exit a loop or
 switch statement. When the 'break' statement is encountered the program jumps
 out of the loop or switch statement, regardless of whether the loop condition or
@@ -2261,7 +2466,7 @@ conditions are met.
 
 
 \subsection{Continue:}
-\label{sec:org955ef10}
+\label{sec:org7d5c624}
 The 'continue' statement is a control statement that is used to skip the current
 iteration of a loop and move on to the next iteration. When the 'continue'
 statement is encountered inside a loop, the program skips over any remaining
@@ -2341,7 +2546,7 @@ a loop, and can be used to skip over certain iterations when certain conditions
 are met.
 
 \section{Arrays:}
-\label{sec:org1d0a0a3}
+\label{sec:orgf33cadf}
 An array is a collection of elements of the same data type, stored in contiguous
 memory locations in C. Each element in the array is accessed using an index,
 which is an integer value that represents the position of the element in the
@@ -2432,7 +2637,7 @@ of the same type, and are widely used in many different programming
 applications.
 
 \subsection{Change an Array Element:}
-\label{sec:orgb07bd38}
+\label{sec:orge254390}
 To change the value of a specific element, refer to the index number:
 
 \noindent\rule{\textwidth}{0.5pt}
@@ -2463,7 +2668,7 @@ Output:
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsection{Loop through an array:}
-\label{sec:org8bcb96f}
+\label{sec:org17781e0}
 You can loop through the array elements with a 'for' loop.
 The following example outputs all elements in the myNumbers array:
 
@@ -2491,7 +2696,7 @@ Output:
 \noindent\rule{\textwidth}{0.5pt}
 
 \section{Strings:}
-\label{sec:orgd67bc47}
+\label{sec:org60d3faa}
 A string is a sequence of characters that are stored in an array. A string is
 represented as an array of characters terminated by a null character, which is a
 character with the ASCII value of 0.
@@ -2550,7 +2755,7 @@ Length of string: 13
 
 \noindent\rule{\textwidth}{0.5pt}
 \subsection{Modify strings:}
-\label{sec:orgb0145ec}
+\label{sec:org95009b8}
 To change the value of a specific character in a string, refer to the index
 number, and use single quotes:
 
@@ -2572,7 +2777,7 @@ Jello World!
 
 \noindent\rule{\textwidth}{0.5pt}
 \subsection{Loop Through a String:}
-\label{sec:orgd288041}
+\label{sec:org19e7998}
 In the same way you loop through an array, it can be done to loop through a
 string:
 
@@ -2600,7 +2805,7 @@ o
 
 \noindent\rule{\textwidth}{0.5pt}
 \subsection{Alternate Way of Creating Strings:}
-\label{sec:org51eceab}
+\label{sec:org488c885}
 In the examples above, we used a "string literal" to create a string
 variable. This is the easiest way to create a string in C.
 
@@ -2620,7 +2825,7 @@ printf("%s", greetings);
 character", This tells C that it is the end of the string.
 
 \subsection{Special Characters in String:}
-\label{sec:org9dcca65}
+\label{sec:org4517e38}
 Because strings must be written within quotes, C will misunderstand this string,
 and generate an error:
 
@@ -2663,14 +2868,14 @@ char txt[] = "We are the so-called \"Vikings\" from the north.";
 
 \noindent\rule{\textwidth}{0.5pt}
 \subsection{String functions:}
-\label{sec:org3b110c4}
+\label{sec:org09374b0}
 In C, strings are represented as arrays of characters, terminated by a null
 character ($\backslash$0). There are various standard library functions that are defined in
 the string.h header file that allow you to manipulate strings. Here are some
 commonly used string functions in C:
 
 \subsubsection{'strlen()'}
-\label{sec:orgebac039}
+\label{sec:orgb1ec5f2}
 Returns the length of a string. This function takes a string as input and
 returns the number of characters in the string, excluding the null character.
 
@@ -2694,7 +2899,7 @@ The length of the string is 13
 \noindent\rule{\textwidth}{0.5pt}
 
 \subsubsection{'strcpy()'}
-\label{sec:org3cdc28a}
+\label{sec:org9930577}
 Copies one string to another. This function takes two strings as input, and
 copies the contents of the second string into the first string.
 
@@ -2718,7 +2923,7 @@ The copied string is Hello, world!
 
 \noindent\rule{\textwidth}{0.5pt}
 \subsubsection{'strcat()'}
-\label{sec:org30d4a7a}
+\label{sec:orgfd2cf36}
 Concatenates two strings. This function takes two strings as input, and appends
 the contents of the second string to the end of the first string.
 
@@ -2742,7 +2947,7 @@ The concatenated string is Hello, world!
 
 \noindent\rule{\textwidth}{0.5pt}
 \subsubsection{'strcmp()'}
-\label{sec:orgf6cc7cd}
+\label{sec:org625e7c9}
 Compares two strings. This function takes two strings as input and returns an
 integer value that indicates the lexicographic relationship between the two
 strings.
@@ -2776,7 +2981,7 @@ to read the documentation carefully to understand how to use each function
 correctly.
 
 \section{User Input:}
-\label{sec:orga241e86}
+\label{sec:org9616f9b}
 In C, you can read user input from the keyboard using the scanf() function. This
 function reads input from the standard input stream (stdin) and stores the
 values in variables.
@@ -2840,7 +3045,7 @@ read a line of text. Note that you must include the following arguments:
 \end{itemize}
 
 \section{Memory Address:}
-\label{sec:org9d118ae}
+\label{sec:org90d789a}
 In C, memory addresses are used to refer to specific locations in the computer's
 memory. Every variable declared in a C program has a memory address associated
 with it. You can think of a memory address as a unique identifier that tells the
@@ -2911,7 +3116,7 @@ when working with memory addresses and avoid common errors like dereferencing a
 null pointer or accessing memory that is out of bounds.
 
 \subsection{Why is it useful to know the memory address?}
-\label{sec:orga1590a9}
+\label{sec:org8af867c}
 \textbf{Pointers} are important in C, because they allow us to manipulate the data in
 the computer's memory - this can reduce the code and improve the performance.
 
@@ -2919,7 +3124,7 @@ Pointers are one of the things that makes C stand out from other programming
 languages.
 
 \section{Pointers:}
-\label{sec:orgede1b64}
+\label{sec:org1b89fea}
 In the previous section pointers were briefly mentioned with regards to memory
 addresses.
 
@@ -2976,7 +3181,7 @@ reference. However, working with pointers requires a good understanding of
 memory management and can be error-prone if not done carefully.
 
 \subsection{Dereference:}
-\label{sec:org4b43e60}
+\label{sec:orgc9415e2}
 Note that the * sign can be confusing here, as it does two different things in our code:
 
 When used in declaration (int* ptr), it creates a pointer variable.
@@ -3003,7 +3208,7 @@ But be careful; pointers must be handled with care, since it is possible to
 damage data stored in other memory addresses.
 
 \section{Pointers and Arrays:}
-\label{sec:org68e6cd5}
+\label{sec:orgd9ed74b}
 You can also use pointers to access arrays.
 Consider the following array of integers:
 
@@ -3104,7 +3309,7 @@ Output:
 
 \noindent\rule{\textwidth}{0.5pt}
 \subsection{How are pointers related to arrays:}
-\label{sec:org399c2c1}
+\label{sec:org491f0f8}
 The name of an array is actually a pointer to the first element of the array.
 See in the example below that the memory address of the first element is the
 same as the name of the array:
@@ -3224,7 +3429,7 @@ And since strings are actually arrays, you can also use pointers to access
 strings.
 
 \section{Functions:}
-\label{sec:orgc77e501}
+\label{sec:org2eff2ad}
 A function is a block of code which only runs when it is called.
 You can pass data known as parameters into a function. Functions are used to
 perform certain actions, and they are important for reusing code: Define the
@@ -3282,7 +3487,7 @@ Functions are an essential part of C programming, allowing you to break down
 complex programs into smaller, more manageable parts.
 
 \subsection{Create a function:}
-\label{sec:orgf00ad71}
+\label{sec:orged02c89}
 To create (often referred to as declare) a function, specify the name of the
 function followed by parentheses() and curly brackets \{\}:
 
@@ -3295,7 +3500,7 @@ void myFunction(){
 
 \noindent\rule{\textwidth}{0.5pt}
 \subsection{Call a function:}
-\label{sec:org4170ee0}
+\label{sec:orgcc03682}
 Declared functions are not executed immediatley. They are "saved for later use"
 and will be executed when they are called.
 To call a function, write the functions name followed by two parenthese () and a
@@ -3375,5 +3580,5 @@ I just got executed!I just got executed!I just got executed!
 
 \clearpage
 \section{Footnotes:}
-\label{sec:org9fc499c}
+\label{sec:org6ebeae9}
 \end{document}

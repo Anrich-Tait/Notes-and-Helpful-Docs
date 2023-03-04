@@ -1,0 +1,41 @@
+#+Title: ORG MODE TEMPLATE
+#+Author: Anrich Tait
+#+latex: \clearpage
+#+OPTIONS: title:nil  toc:nil
+#+LaTeX_CLASS_OPTIONS: [a4paper]
+
+#+BEGIN_EXPORT latex
+rbegin{titlepage}
+\begin{center}
+{\Large FIRST HEADING \par}
+\vspace{2cm}
+{\Large SECOND HEADING \par}
+\vspace{2cm}
+SHORT SPACER \par
+\vspace{2cm}
+{\Large THIRD HEADING \par}
+\vspace{2cm}
+{\large DATE}
+\end{center}
+\vfill
+Written by:\\
+\\
+Anrich Tait\\
+EXTRA INFORMATION
+\end{titlepage}
+
+\tableofcontents
+#+END_EXPORT
+
+* Introduction
+And now just type away!
+# Everything with a "# " (don't forget the space) before it is a comment and is ignored when exporting to pdf.
+
+** This is a sub-heading!
+Remember our lists?
+- Here is a list entry
+- Here is another one
+
+# Don't forget to add the bibliography by the end.
+bibliographystyle:apacite
+bibliography:/path/to/library.bib

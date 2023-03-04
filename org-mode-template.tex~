@@ -1,0 +1,90 @@
+% Created 2023-03-04 Sat 05:42
+% Intended LaTeX compiler: pdflatex
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\author{Anrich Tait}
+\date{\today}
+\title{ORG MODE TEMPLATE}
+\hypersetup{
+ pdfauthor={Anrich Tait},
+ pdftitle={ORG MODE TEMPLATE},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.2 (Org mode 9.5.5)}, 
+ pdflang={English}}
+\begin{document}
+
+\clearpage
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage{titlesec}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\bfseries}{\thesubsection}{1em}{}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        \includegraphics[width=0.4\textwidth]{logo.png}
+        
+        \vspace{1.5cm}
+        
+        \Huge
+        \textbf{Title of the Project}
+        
+        \vspace{0.5cm}
+        \LARGE
+        Subtitle of the Project
+        
+        \vspace{1.5cm}
+        
+        \textbf{Author Name}
+        
+        \vspace{1cm}
+        
+        \large
+        Date
+        
+        \vfill
+        
+        \small
+        \textbf{Company Name}\\
+        Address\\
+        City, State Zip Code\\
+        Phone: (XXX) XXX-XXXX\\
+        Email: info@company.com
+        
+    \end{center}
+\end{titlepage}
+
+
+\tableofcontents
+
+\section{Introduction}
+\label{sec:orgc25c243}
+And now just type away!
+
+\subsection{This is a sub-heading!}
+\label{sec:org68934a5}
+Remember our lists?
+\begin{itemize}
+\item Here is a list entry
+\item Here is another one
+\end{itemize}
+
+bibliographystyle:apacite
+bibliography:/path/to/library.bib
+\end{document}
