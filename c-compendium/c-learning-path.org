@@ -1,0 +1,37 @@
+
+
+* Concepts for Coding a Quiz Program in C
+
+To code a program like a quiz program in C, you will need to understand the following concepts:
+
+1. Basic syntax and control structures of the programming language (in this
+   case, C). This includes variables, data types, operators, loops, conditional
+   statements, and functions.
+   
+
+2. Arrays: how to declare, initialize, and access elements of an array.
+
+3. Strings: how to declare, initialize, and manipulate strings. In C, strings
+   are represented as arrays of characters.
+
+4. Functions: how to define and use functions to organize your code and make it reusable.
+
+5. Input/output: how to read input from the user and display output to the
+   console. In C, this is typically done using the `scanf()` and `printf()`
+   functions.
+   
+6. Conditionals: how to use if-else statements and switch statements to control
+   the flow of your program based on certain conditions.
+   
+7. Loops: how to use for loops and while loops to repeat blocks of code.
+
+8. Logical operators and comparisons: how to use logical operators (&&, ||, !)
+   and comparison operators (==, !=, <, >, <=, >=) to evaluate conditions in
+   your code.
+   
+9. Arrays of arrays: how to create and use multidimensional arrays, which are
+   arrays of arrays.
+   
+By learning these concepts in this order, you will build a strong foundation in
+the basics of programming and gradually build up to more advanced topics like
+arrays of arrays.

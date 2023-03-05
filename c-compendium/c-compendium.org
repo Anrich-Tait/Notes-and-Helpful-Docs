@@ -799,7 +799,6 @@ the number as floating point.
 -----
 
 
-
 *** %d (Decimal Integer):
 
 -----
@@ -1747,7 +1746,6 @@ complex conditions and the shorthand 'if-else' statement for simpler conditions.
 
 
 
-
 * Switch statement:
 Instead of writing many 'if ... else' statements, you can use the switch
 statement.
@@ -1880,7 +1878,7 @@ readable.
 There are 3 types of loops in C: 'for', 'while', and 'do-while'.
 
 ** for Loop:
-The 'for' loops is a control flow statement that repeatedly executes a block of
+The 'for' loop is a control flow statement that repeatedly executes a block of
 code as long as a particular condition is true. The syntax is as follows:
 -----
 #+BEGIN_SRC C :results output
@@ -1926,6 +1924,76 @@ Output:
   #+end_example
 -----
 
+Example using the fahrenheit celsius program mentioned before:
+Below is a variation of the termperature converter used in the table:
+-----
+#+BEGIN_SRC C :results output
+  #include <stdio.h>
+
+  int main(){
+    int fahr;
+
+    for (fahr = 0; fahr <= 300; fahr = fahr + 20)
+      printf("%3d %6.1f\n", fahr, (5.0/9.0)*(fahr-32));
+  }
+  #+END_SRC
+Output:
+  #+RESULTS:
+  #+begin_example
+    0  -17.8
+   20   -6.7
+   40    4.4
+   60   15.6
+   80   26.7
+  100   37.8
+  120   48.9
+  140   60.0
+  160   71.1
+  180   82.2
+  200   93.3
+  220  104.4
+  240  115.6
+  260  126.7
+  280  137.8
+  300  148.9
+  #+end_example
+-----
+One of the major changes in this example compared to the one shown previously is
+the elimination of most of the variables, only 'fahr' remains and it was made an
+'int' type.
+The 'lower' and 'upper' limits as well as the 'step size' appear only as
+constants in the 'for' statement. The expression that computes the celsius
+temperature now appears as the third argument of printf instead of as a seperate
+assignment statement.
+
+This last change is an instance of a general rule-in any context where it is
+permissible to use the value of a variable of some type, you can use a more
+compliced expression of that type. Since the third argument of printf must be a
+floating-point value to math the %6.1f, any floating-point expression can occur
+there.
+
+The 'for' statement is a loop, a generalization of the 'while'. If you compare
+it to the earlier 'while', it's operation should be clear. The first part, the
+initialization
+#+BEGIN_SRC C :results output
+fahr = 0
+#+END_SRC
+is done once, before the loop proper is entered. The scond part is the test or
+condition that controls the loop:
+#+BEGIN_SRC C :results output
+  fahr <= 300
+  #+END_SRC
+This condition is evaluated; if it is true, the body of the loop (here a single
+printf) is executed. Then the increment step:
+
+#+BEGIN_SRC C :results output
+  fahr = fahr + 20
+  #+END_SRC
+is executed, and the condition re-evaluated. The loop terminates if the
+condition has become false. As with the 'while', the body of the loop can be a
+single statement, or a group
+
+  
 ** while Loop:
 -----
 #+BEGIN_SRC C :results output
@@ -2074,7 +2142,6 @@ to achieve the same result.
 
 
 
-
 * Break and Continue:
 ** Break:
 The 'break' statement is a control statement that is used to exit a loop or
@@ -2144,7 +2211,6 @@ and continue with the rest of the program.
 In summary, the break statement is a useful tool for controlling the flow of a
 program, and can be used to exit loops or switch statements when certain
 conditions are met.
-
 
 
 ** Continue:
