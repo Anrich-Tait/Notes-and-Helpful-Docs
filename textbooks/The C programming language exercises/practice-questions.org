@@ -1,0 +1,157 @@
+* Questions:
+
+1. Write a program to print "Hello, world!" to the console.
+
+2. Write a program to take two integer inputs from the user and print their sum.
+
+3. Write a program to find the largest number among three given numbers.
+
+4. Write a program to print the multiplication table of a given number.
+
+5. Write a program to find the factorial of a given number.
+
+6. Write a program to check if a given number is prime or not.
+
+7. Write a program to reverse a given string.
+
+8. Write a program to count the number of vowels in a given string.
+
+9. Write a program to convert Celsius temperature to Fahrenheit temperature.
+
+10. Write a program to find the sum of all the even numbers between 1 and 100.
+
+* Notes on questions:
+** 1. Completed.
+None
+
+** 2. Completed.
+In C, you can get user input through the standard input stream, which is
+represented by the keyboard input. The standard input stream is a pre-defined
+file pointer in C, and it can be accessed using the scanf() function.
+Here's an example of how to get user input in C using scanf():
+   -----
+   #+BEGIN_SRC C :results output
+  #include <stdio.h>
+
+     int main() {
+	int num;
+
+	printf("Enter a number: ");
+	scanf("%d", &num);
+
+	printf("The entered number is %d", num);
+
+	return 0;
+     }
+
+     #+END_SRC
+  -----
+In this example, the scanf() function is used to read an integer input from
+the user. The first argument of scanf() is a format string that specifies the
+type of input to be read. In this case, the "%d" format specifier is used to
+indicate that an integer value is expected.
+The second argument of scanf() is the address of the variable where the input
+value should be stored. In this example, the address of the variable "num" is
+passed to scanf() using the "&" operator. This is because scanf() needs to
+modify the value stored in the variable "num".
+After the user enters a number and presses Enter, the scanf() function reads the
+input from the standard input stream and stores it in the variable "num". The
+entered number is then printed to the console using the printf() function.
+Note that the format specifier used in scanf() must match the data type of the
+variable being read. For example, to read a float value, you would use the "%f"
+format specifier instead of "%d". Also, make sure to include the header file
+"stdio.h" at the beginning of your program to use scanf() function.
+
+** 3. Completed.
+To get the highest number among a set of 3 given numbers in C, you can use a
+simple if-else statement. Here's an example code that finds the highest number
+among three given integers:
+-----
+#+BEGIN_SRC C :results output
+  #include <stdio.h>
+
+int main() {
+   int a, b, c, highest;
+
+   printf("Enter three numbers: ");
+   scanf("%d %d %d", &a, &b, &c);
+
+   if (a >= b && a >= c) {
+      highest = a;
+   }
+   else if (b >= a && b >= c) {
+      highest = b;
+   }
+   else {
+      highest = c;
+   }
+
+   printf("The highest number is %d", highest);
+
+   return 0;
+}
+
+  #+END_SRC
+-----
+In this example, the user is prompted to enter three numbers using the scanf()
+function. The values are stored in variables a, b, and c.
+
+Then, an if-else statement is used to compare the values of a, b, and c, and
+store the highest number in the variable highest. The conditions inside the
+if-else statement check which of the three numbers is the highest, and set the
+variable highest accordingly.
+
+Finally, the program prints the highest number to the console using the printf()
+function.
+
+Note that if two or more numbers are equal and the highest among the given
+numbers, then the code above will select one of them as the highest number. If
+you want to output all the highest numbers if there are more than one, you can
+use an array to store them and iterate through the array to print them.
+
+** 4. Completed (practicing):
+To write a C program that outputs the multiplication table of a given number,
+you can use a loop to iterate through the numbers from 1 to 10, and multiply
+each number with the given number to generate the multiplication table. Here's
+an example code that generates the multiplication table of a given number:
+
+-----
+#+BEGIN_SRC C :results output
+  #include <stdio.h>
+
+int main() {
+   int num, i;
+
+   printf("Enter a number: ");
+   scanf("%d", &num);
+
+   for (i = 1; i <= 10; i++) {
+      printf("%d x %d = %d\n", num, i, num * i);
+   }
+
+   return 0;
+}
+
+  #+END_SRC
+-----
+In this example, the user is prompted to enter a number using the scanf()
+function, which is stored in the variable "num". Then, a for loop is used to
+iterate through the numbers from 1 to 10.
+
+
+Inside the loop, the printf() function is used to print the multiplication table
+of the given number. The format string "%d x %d = %d\n" is used to display the
+formula of multiplication table with line break, where the first %d is replaced
+with the given number, the second %d is replaced with the current value of the
+loop index "i", and the third %d is replaced with the product of the given
+number and the current value of the loop index "i".
+
+
+After the loop finishes executing, the program returns 0 and ends.
+
+This program will display the multiplication table of the given number from 1
+to 10. If you want to display the multiplication table for a larger range of
+numbers, you can change the condition of the for loop to iterate through more
+numbers, such as from 1 to 20.
+
+
